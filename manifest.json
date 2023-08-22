@@ -1,0 +1,20 @@
+{
+  "name": "AH Who Can Play This",
+  "description": "Who can play this card in AH",
+  "version": "1.0.1",
+  "manifest_version": 3,
+  "icons": {
+    "128": "128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://arkhamdb.com/card/**"
+      ],
+      "js": [
+        "index.js",
+        "jquery.min.js"
+      ]
+    }
+  ]
+}
